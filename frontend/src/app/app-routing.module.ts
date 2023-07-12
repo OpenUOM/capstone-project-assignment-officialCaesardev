@@ -7,18 +7,17 @@ import { EditTeacherComponent } from './components/edit-teacher/edit-teacher.com
 import { StudentTableComponent } from './components/student-table/student-table.component';
 import { TeacherTableComponent } from './components/teacher-table/teacher-table.component';
 
-
 const routes: Routes = [
   { path: '', component: TeacherTableComponent },
   { path: 'student', component: StudentTableComponent },
   { path: 'addTeacher', component: AddNewTeacherComponent },
   { path: 'addStudent', component: AddNewStudentComponent },
   { path: 'editStudent', component: EditStudentComponent },
-  { path: 'editTeacher', component: EditTeacherComponent }
+  { path: 'editTeacher', component: EditTeacherComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
